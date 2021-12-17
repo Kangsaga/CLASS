@@ -2,24 +2,21 @@
 public class PigBank {
 	
 	int money;
-	
-	
-	
-	
+
 	public PigBank(int money) {
 		//super();
 		this.money = money;
 	}
-	// µ·À» ³Ö´Â´Ù
+	// ëˆì„ ë„£ëŠ”ë‹¤
 	public void deposit(int inputMoney) {
 		this.money = money + inputMoney;
 	}
-	// µ·À» ÀÎÃâÇÑ´Ù
+	// ëˆì„ ì¸ì¶œí•œë‹¤
 	public void withdraw(int outputMoney) {
 		this.money = money - outputMoney;
 	}
-	//µ·À» Ãâ·ÂÇÏ´Â ¸Ş¼Òµå showMoney()
+	//ëˆì„ ì¶œë ¥í•˜ëŠ” ë©”ì†Œë“œ showMoney()
 	public void showMoney() {
-		System.out.println("ÇöÀç ±İ¾× : " + money);
+		System.out.println("í˜„ì¬ ê¸ˆì•¡ : " + money);
 	}
 }
