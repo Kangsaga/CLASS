@@ -7,30 +7,23 @@ public class PigMain {
 		
 		PigBank bank = new PigBank(1000);
 		
-		
-		
-		System.out.println("ÇöÀç ±Ý¾× : " + bank.money);
+		System.out.println("í˜„ìž¬ ê¸ˆì•¡ : " + bank.money);
 		Scanner sc = new Scanner(System.in);
-		System.out.print("ÀÔ±Ý¾× ÀÔ·Â >>");
+		System.out.print("ìž…ê¸ˆì•¡ ìž…ë ¥ >>");
 		
 		int inputMoney = sc.nextInt();
 		
 		bank.deposit(inputMoney);
-		System.out.println("ÇöÀç ±Ý¾× : " + bank.money);
+		System.out.println("í˜„ìž¬ ê¸ˆì•¡ : " + bank.money);
 		
-		
-		System.out.print("Ãâ±ÝÇÒ ±Ý¾× ÀÔ·Â >> ");
+		System.out.print("ì¶œê¸ˆí•  ê¸ˆì•¡ ìž…ë ¥ >> ");
 		int outputMoney = sc.nextInt();
 		
 		bank.withdraw(outputMoney);
-		System.out.println("ÇöÀç ±Ý¾× : " + bank.money);
+		System.out.println("í˜„ìž¬ ê¸ˆì•¡ : " + bank.money);
 		
-		
-		//ÇöÀç±Ý¾× º¸¿©ÁÖ´Â ¸Þ¼Òµå
+		//í˜„ìž¬ê¸ˆì•¡ ë³´ì—¬ì£¼ëŠ” ë©”ì†Œë“œ
 		bank.showMoney();
-		
-		
-		
 	}
 
 }
