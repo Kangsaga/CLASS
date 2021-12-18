@@ -1,13 +1,13 @@
 
 public class Student {
 	
-	
 	String name;
 	String number;
 	int age;
 	int scorejava;
 	int scoreWeb;
 	int scoreAndroid;
+	
 	public Student(String name, String number, int age, int scorejava, int scoreWeb, int scoreAndroid) {
 		//super();
 		this.name = name;
@@ -17,12 +17,13 @@ public class Student {
 		this.scoreWeb = scoreWeb;
 		this.scoreAndroid = scoreAndroid;
 	}
+	
 	public void show() {
-		System.out.println(name + "´Ô ¾È³çÇÏ¼¼¿ä.");
-		System.out.println("[ " + number + ", " + age + "»ì" + " ]");
-		System.out.println(name + "´ÔÀÇ JavaÁ¡¼ö´Â " + scorejava + "Á¡ ÀÔ´Ï´Ù");
-		System.out.println(name + "´ÔÀÇ WebÁ¡¼ö´Â " + scoreWeb + "Á¡ ÀÔ´Ï´Ù");
-		System.out.println(name + "´ÔÀÇ AndroidÁ¡¼ö´Â " + scoreAndroid + "Á¡ ÀÔ´Ï´Ù");
+		System.out.println(name + "ë‹˜ ì•ˆë…•í•˜ì„¸ìš”.");
+		System.out.println("[ " + number + ", " + age + "ì‚´" + " ]");
+		System.out.println(name + "ë‹˜ì˜ Javaì ìˆ˜ëŠ” " + scorejava + "ì  ì…ë‹ˆë‹¤");
+		System.out.println(name + "ë‹˜ì˜ Webì ìˆ˜ëŠ” " + scoreWeb + "ì  ì…ë‹ˆë‹¤");
+		System.out.println(name + "ë‹˜ì˜ Androidì ìˆ˜ëŠ” " + scoreAndroid + "ì  ì…ë‹ˆë‹¤");
 		System.out.println("======================================================");
 	}
 	
