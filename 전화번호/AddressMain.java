@@ -1,4 +1,4 @@
-package ÀüÈ­¹øÈ£;
+package ì „í™”ë²ˆí˜¸;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -13,18 +13,20 @@ public class AddressMain {
 		ArrayList<Address> addressList = new ArrayList<Address>();
 
 		while (true) {
-			System.out.print("[1]Ãß°¡ [2]ÀüÃ¼Á¶È¸ [3]»èÁ¦ [4]°Ë»ö [5]Á¾·á >>");
+			System.out.print("[1]ì¶”ê°€ [2]ì „ì²´ì¡°íšŒ [3]ì‚­ì œ [4]ê²€ìƒ‰ [5]ì¢…ë£Œ >>");
 			int num = sc.nextInt();
 
 			if (num == 1) {
-				// ÀüÈ­¹øÈ£ºÎ (addressList)¿¡ °ªÀ» Ãß°¡ÇÏ°í½Í´Ù
-				// ÀÌ¸§ ³ªÀÌ ÀüÈ­¹øÈ£¸¦ ÀÔ·Â¹Ş¾Æ¼­ -> °´Ã¼·Î ¸¸µé¾î¼­
-				// addressList Ãß°¡ ½ÃÅ´
-				System.out.print("ÀÌ¸§ : ");
+				// ì „í™”ë²ˆí˜¸ë¶€ (addressList)ì— ê°’ì„ ì¶”ê°€í•˜ê³ ì‹¶ë‹¤
+				// ì´ë¦„ ë‚˜ì´ ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥ë°›ì•„ì„œ -> ê°ì²´ë¡œ ë§Œë“¤ì–´ì„œ
+				// addressList ì¶”ê°€ ì‹œí‚´
+				System.out.print("ì´ë¦„ : ");
 				String name = sc.next();
-				System.out.print("³ªÀÌ : ");
+				
+				System.out.print("ë‚˜ì´ : ");
 				int age = sc.nextInt();
-				System.out.print("ÀüÈ­¹øÈ£ : ");
+				
+				System.out.print("ì „í™”ë²ˆí˜¸ : ");
 				String phoneNumber = sc.next();
 
 				Address address = new Address(name, age, phoneNumber);
@@ -36,7 +38,7 @@ public class AddressMain {
 					addressList.get(i).show();
 					
 				}if (addressList.size() == 0){
-					System.out.println("µî·ÏµÈ ¿¬¶ôÃ³°¡ ¾ø½À´Ï´Ù");
+					System.out.println("ë“±ë¡ëœ ì—°ë½ì²˜ê°€ ì—†ìŠµë‹ˆë‹¤");
 				}
 
 			} else if (num == 3) {
@@ -44,14 +46,14 @@ public class AddressMain {
 					System.out.print(i+1 + ".");
 					addressList.get(i).show();
 				}
-				System.out.print("»èÁ¦ÇÒ ¹øÈ£¸¦ ´©¸£¼¼¿ä >>");
+				System.out.print("ì‚­ì œí•  ë²ˆí˜¸ë¥¼ ëˆ„ë¥´ì„¸ìš” >>");
 				int num2 = sc.nextInt();
 				
 				addressList.remove(num2-1);
 
 			} else if (num == 4) {
 				boolean sn= false;
-				System.out.print("ÀÌ¸§ °Ë»ö : ");
+				System.out.print("ì´ë¦„ ê²€ìƒ‰ : ");
 				String serchName = sc.next();
 				for (int i = 0; i < addressList.size(); i++) {
 					if (addressList.get(i).getName().equals(serchName)) {
@@ -59,12 +61,12 @@ public class AddressMain {
 						sn = true;
 					}
 					if(sn == false) {
-						System.out.println("°Ë»ö ³»¿ëÀÌ ¾ø½À´Ï´Ù");
+						System.out.println("ê²€ìƒ‰ ë‚´ìš©ì´ ì—†ìŠµë‹ˆë‹¤");
 					}
 				}
 
 			} else if (num == 5) {
-				System.out.println("Á¾·á");
+				System.out.println("ì¢…ë£Œ");
 				break;
 			}
 		}
