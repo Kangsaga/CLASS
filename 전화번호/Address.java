@@ -1,4 +1,4 @@
-package ��ȭ��ȣ;
+package ÀüÈ­¹øÈ£;
 
 public class Address {
 
@@ -25,6 +25,7 @@ public class Address {
 		return phoneNumber;
 	}
 	public void show() {
-		System.out.printf(" %s  (%d��) : %s \n",name,age,phoneNumber);
+		System.out.printf(" %s  (%d¼¼) : %s \n",name,age,phoneNumber);
 	}
+	
 }
