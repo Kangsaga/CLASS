@@ -23,13 +23,14 @@ public class BookData {
 	public String getWriter() {
 		return writer;
 	}
+	
 	public void Show() {
 //		System.out.print("[");
 //		System.out.print(title + " ");
 //		System.out.print(price + " ");
 //		System.out.print(writer+ " ");
 //		System.out.println("]");
-		System.out.printf("[ Á¦¸ñ: %s °¡°İ: %d¿ø ÀúÀÚ: %s ]",title,price,writer);
+		System.out.printf("[ ÃÂ¦Â¸Ã±: %s Â°Â¡Â°Ã: %dÂ¿Ã¸ Ã€ÃºÃ€Ãš: %s ]",title,price,writer);
 		System.out.println();
 	}
 }
