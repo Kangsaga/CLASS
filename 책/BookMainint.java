@@ -6,9 +6,9 @@ public class BookMainint {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		BookData book1 = new BookData("ÀÚ¹Ù", 10000, "º´°ü");
-		BookData book2 = new BookData("DataBase", 20000, "µ¿¿ø");
-		BookData book3 = new BookData("Web", 30000, "½ÂÈ¯");
+		BookData book1 = new BookData("ìë°”", 10000, "ë³‘ê´€");
+		BookData book2 = new BookData("DataBase", 20000, "ë™ì›");
+		BookData book3 = new BookData("Web", 30000, "ìŠ¹í™˜");
 		Scanner sc = new Scanner(System.in);
 
 		BookData[] bookList = new BookData[3];
@@ -21,43 +21,42 @@ public class BookMainint {
 		array.get(0).getTitle();
 
 //		for (int i = 0; i < bookList.length; i++) {
-//			System.out.print("Ã¥ Á¦¸ñ ÀÔ·Â : ");
+//			System.out.print("ì±… ì œëª© ì…ë ¥ : ");
 //			String title = sc.next();
-//			System.out.print("°¡°İ ÀÔ·Â : ");
+//			System.out.print("ê°€ê²© ì…ë ¥ : ");
 //			int price = sc.nextInt();
-//			System.out.print("ÀúÀÚ ÀÔ·Â : ");
+//			System.out.print("ì €ì ì…ë ¥ : ");
 //			String writer = sc.next();
 //			
 //			BookData book = new BookData(title, price, writer);
 //			bookList[i] = book;
 //		}
 
-		System.out.print("±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		int money = sc.nextInt();
 
-		System.out.println("±¸¸Å°¡´ÉÇÑ Ã¥ ¸ñ·Ï");
+		System.out.println("êµ¬ë§¤ê°€ëŠ¥í•œ ì±… ëª©ë¡");
 		for (int i = 0; i < bookList.length; i++) {
 
 			if (bookList[i].getPrice() <= money) {
 				bookList[i].Show();
-
 			}
 		}
 
-		// bookList »ç¿ëÇØ¼­ Ã¥ÀÌ¸§À» ÀüºÎ Ãâ·ÂÇØÁÖ¼¼¿ä
-//		System.out.println("Ã¥ Á¦¸ñ : " + bookList[0].getTitle());
-//		System.out.println("Ã¥ Á¦¸ñ : " + bookList[1].getTitle());
-//		System.out.println("Ã¥ Á¦¸ñ : " + bookList[2].getTitle());
+		// bookList ì‚¬ìš©í•´ì„œ ì±…ì´ë¦„ì„ ì „ë¶€ ì¶œë ¥í•´ì£¼ì„¸ìš”
+//		System.out.println("ì±… ì œëª© : " + bookList[0].getTitle());
+//		System.out.println("ì±… ì œëª© : " + bookList[1].getTitle());
+//		System.out.println("ì±… ì œëª© : " + bookList[2].getTitle());
 
-		// privateÀ¸·Î °¨Ãß¾î ³õ¾Ò±â ¶§¹®¿¡ ¿À·ù ¹ß»ı
-		// book1.title = "Â¥ÆÄ°ÔÆ¼";
+		// privateìœ¼ë¡œ ê°ì¶”ì–´ ë†“ì•˜ê¸° ë•Œë¬¸ì— ì˜¤ë¥˜ ë°œìƒ
+		// book1.title = "ì§œíŒŒê²Œí‹°";
 
-		// private´Â °°Àº Å¬·¡½º ³»¿¡¼­¸¸ Á¢±ÙÀÌ °¡´ÉÇÏ´Ù
-		// protect´Â °°Àº ÆĞÅ°Áö + »ó¼Ó°ü°è
-		// default´Â °°Àº ÆĞÅ°Áö ³»¿¡¼­¸¸ °¡´ÉÇÏ´Ù
+		// privateëŠ” ê°™ì€ í´ë˜ìŠ¤ ë‚´ì—ì„œë§Œ ì ‘ê·¼ì´ ê°€ëŠ¥í•˜ë‹¤
+		// protectëŠ” ê°™ì€ íŒ¨í‚¤ì§€ + ìƒì†ê´€ê³„
+		// defaultëŠ” ê°™ì€ íŒ¨í‚¤ì§€ ë‚´ì—ì„œë§Œ ê°€ëŠ¥í•˜ë‹¤
 
-		// private À¸·Î °¨Ãß¾îÁø Á¤º¸¸¦ Á¢±ÙÇÏ´Â ¹æ¹ı!!
-//		System.out.println("Ã¥ Á¦¸ñ :" + bookList[0].getTitle());
+		// private ìœ¼ë¡œ ê°ì¶”ì–´ì§„ ì •ë³´ë¥¼ ì ‘ê·¼í•˜ëŠ” ë°©ë²•!!
+//		System.out.println("ì±… ì œëª© :" + bookList[0].getTitle());
 
 	}
 
