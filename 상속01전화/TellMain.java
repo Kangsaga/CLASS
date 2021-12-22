@@ -1,4 +1,4 @@
-package »ó¼Ó01;
+package ìƒì†01;
 
 public class TellMain {
 
@@ -9,14 +9,12 @@ public class TellMain {
 		tell.Call();
 		tell.ButtonClick();
 		
-		//ºÎ¸ğ¿¡ ÀÖ´Â ±â´ÉÀ» ÀüºÎ »ó¼Ó ¹Ş¾Ò±â ¶§¹®¿¡
-		//ÀÛ¼ºÇØ ÁÖÁö ¾Ê¾Æµµ ±â´ÉÀÌ »ç¿ë°¡´ÉÇÏ´Ù
+		//ë¶€ëª¨ì— ìˆëŠ” ê¸°ëŠ¥ì„ ì „ë¶€ ìƒì† ë°›ì•˜ê¸° ë•Œë¬¸ì—
+		//ì‘ì„±í•´ ì£¼ì§€ ì•Šì•„ë„ ê¸°ëŠ¥ì´ ì‚¬ìš©ê°€ëŠ¥í•˜ë‹¤
 		
 		Folder folder = new Folder();
 		folder.Call();
 		folder.Camera();
 		folder.ButtonClick();
-		
 	}
-
 }
