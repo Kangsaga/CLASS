@@ -4,14 +4,14 @@ import javazoom.jl.player.MP3Player;
 
 public class MusicPlayer {
 	
-	// Controller : ½ÇÁ÷ÀûÀÎ ±â´ÉÀÌ ¼öÇàµÉ Å¬¶ó½º
+	// Controller : ì‹¤ì§ì ì¸ ê¸°ëŠ¥ì´ ìˆ˜í–‰ë  í´ë¼ìŠ¤
 	
 	ArrayList<Music> musicList = new ArrayList<Music>();
 	MP3Player mp3 = new MP3Player();
 	int index = 0;
 	
 	public MusicPlayer() {
-		musicList.add(new Music("±ø", "Rain", 100, "C://music/Rain - ±ø.mp3"));
+		musicList.add(new Music("ê¹¡", "Rain", 100, "C://music/Rain - ê¹¡.mp3"));
 		musicList.add(new Music("Dalla Dalla", "Itzy", 120, "C://music/Itzy - Dalla Dalla.mp3 "));
 		musicList.add(new Music("SOLO", "JENNIE", 200, "C://music/JENNIE - SOLO.mp3"));
 		musicList.add(new Music("2002", "Anne Marie", 140, "C://music/Anne Marie - 2002.mp3"));
@@ -20,32 +20,36 @@ public class MusicPlayer {
 		musicList.add(new Music("Let It Go", "Idina Menzel", 18, "C://music/Idina Menzel - Let It Go.mp3"));
 	}
 	
-	// Àç»ı±â´É »©ÁÖ±â
+	// ì¬ìƒê¸°ëŠ¥ ë¹¼ì£¼ê¸°
 	public void play() {
 		mp3.play(musicList.get(index).getPath());
 		musicList.get(index).show();
 	}
+	
 	public void stop() {
 		mp3.stop();
-		System.out.println("À½¾ÇÀ» Á¤ÁöÇÕ´Ï´Ù");
+		System.out.println("ìŒì•…ì„ ì •ì§€í•©ë‹ˆë‹¤");
 	}
-	//´ÙÀ½ °îÀ» ½ÇÇàÇÒ ±â´É
+	
+	//ë‹¤ìŒ ê³¡ì„ ì‹¤í–‰í•  ê¸°ëŠ¥
 	public void nextPlay() {
 		if (mp3.isPlaying()) {
 			mp3.stop();
 			
 		}
+		
 		if (index < musicList.size() - 1) {
 			index++;
 			musicList.get(index).show();
 			mp3.play(musicList.get(index).getPath());
 
 		} else {
-			System.out.println("Àç»ıÇÒ°îÀÌ ¾ø½À´Ï´Ù");
+			System.out.println("ì¬ìƒí• ê³¡ì´ ì—†ìŠµë‹ˆë‹¤");
 			index = 0;
 		}
 	}
-	//ÀÌÀü°îÀ» ½ÇÇàÇÒ ±â´É
+	
+	//ì´ì „ê³¡ì„ ì‹¤í–‰í•  ê¸°ëŠ¥
 	public void previousPlay() {
 		if (mp3.isPlaying()) {
 			mp3.stop();
@@ -55,7 +59,7 @@ public class MusicPlayer {
 			musicList.get(index).show();
 			mp3.play(musicList.get(index).getPath());
 		} else {
-			System.out.println("ÀÌÀü°îÀÌ ¾ø½À´Ï´Ù");
+			System.out.println("ì´ì „ê³¡ì´ ì—†ìŠµë‹ˆë‹¤");
 			index = musicList.size() - 1;
 		}
 	}
