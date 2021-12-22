@@ -9,56 +9,54 @@ public class MusicMain {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
-		MP3Player mp3 = new MP3Player(); // À½¾ÇÀ» ½ÇÁúÀûÀ¸·Î Àç»ı½ÃÄÑÁÙ °´Ã¼
+		MP3Player mp3 = new MP3Player(); // ìŒì•…ì„ ì‹¤ì§ˆì ìœ¼ë¡œ ì¬ìƒì‹œì¼œì¤„ ê°ì²´
 
-		// À½¾Ç¸®½ºÆ®°¡µÉ ArrayList¸¦ ¸¸µé¾î ÁÖ¼¼¿ä
+		// ìŒì•…ë¦¬ìŠ¤íŠ¸ê°€ë  ArrayListë¥¼ ë§Œë“¤ì–´ ì£¼ì„¸ìš”
 //		ArrayList<Music> musicList = new ArrayList<Music>();
 
-//		musicList.add(new Music("±ø", "Rain", 100, "C://music/Rain - ±ø.mp3"));
+//		musicList.add(new Music("ê¹¡", "Rain", 100, "C://music/Rain - ê¹¡.mp3"));
 //		musicList.add(new Music("Dalla Dalla", "Itzy", 120, "C://music/Itzy - Dalla Dalla.mp3 "));
 //		musicList.add(new Music("SOLO", "JENNIE", 200, "C://music/JENNIE - SOLO.mp3"));
 //		musicList.add(new Music("2002", "Anne Marie", 140, "C://music/Anne Marie - 2002.mp3"));
 //		musicList.add(new Music("bad guy", "Billie Eilish ", 180, "C://music/Billie Eilish - bad guy.mp3"));
 //		musicList.add(new Music("Circle of Life", "Carmen Twillie, Lebo M", 110, "C://music/Carmen Twillie, Lebo M. - Circle of Life.mp3"));
 //		musicList.add(new Music("Let It Go", "Idina Menzel", 18, "C://music/Idina Menzel - Let It Go.mp3"));
+		
 		MusicPlayer player = new MusicPlayer();
-		int index = 0; // ÇöÀç³ë·¡ À§Ä¡Á¤º¸
+		int index = 0; // í˜„ì¬ë…¸ë˜ ìœ„ì¹˜ì •ë³´
 
-		// isplaying() -> ÇöÀç Àç»ıÁßÀÎÁö ÆÇ´ÜÇÏ´Â ¸Ş¼Òµå
-		// stop() -> ÇöÀç Àç»ıÁßÀÎ ³ë·¡¸¦ ¸ØÃß´Â ¸Ş¼Òµå
+		// isplaying() -> í˜„ì¬ ì¬ìƒì¤‘ì¸ì§€ íŒë‹¨í•˜ëŠ” ë©”ì†Œë“œ
+		// stop() -> í˜„ì¬ ì¬ìƒì¤‘ì¸ ë…¸ë˜ë¥¼ ë©ˆì¶”ëŠ” ë©”ì†Œë“œ
 
 		while (true) {
 
-			System.out.print("1.Àç»ı 2.Á¤Áö 3.´ÙÀ½°î 4.ÀÌÀü°î 5.Á¾·á >>");
+			System.out.print("1.ì¬ìƒ 2.ì •ì§€ 3.ë‹¤ìŒê³¡ 4.ì´ì „ê³¡ 5.ì¢…ë£Œ >>");
 			int num = sc.nextInt();
 
 			if (num == 1) {
-				// Àç»ı -> ±ø, Rain, 1ºĞ 40ÃÊ
+				// ì¬ìƒ -> ê¹¡, Rain, 1ë¶„ 40ì´ˆ
 //				System.out.print(musicList.get(0).getMusicName() + " ");
 //				System.out.print(musicList.get(0).getSinger() + " ");
 //				System.out.println(musicList.get(0).getPlayTime() + " ");
 //				musicList.get(index).show();
 				
-				
-				//mp3.play(musicList.get(index).getPath()); // Àç»ı ¸Ş¼Òµå play(°æ·Î)
-				// Controller ºÒ·¯¿Í¼­ ½ÇÇàÇÏ±â
+				//mp3.play(musicList.get(index).getPath()); // ì¬ìƒ ë©”ì†Œë“œ play(ê²½ë¡œ)
+				// Controller ë¶ˆëŸ¬ì™€ì„œ ì‹¤í–‰í•˜ê¸°
 //				MusicPlayer player = new MusicPlayer();
 				
 				player.play();
 				
-				
 			} else if (num == 2) {
 				
-				
-					// ÇöÀç Àç»ıÁßÀÎ ³ë·¡°¡ ÀÖ´Ù¸é true
-					// ÇöÀç Àç»ıÁßÀÎ ³ë·¡°¡ ¾ø´Ù¸é false
+					// í˜„ì¬ ì¬ìƒì¤‘ì¸ ë…¸ë˜ê°€ ìˆë‹¤ë©´ true
+					// í˜„ì¬ ì¬ìƒì¤‘ì¸ ë…¸ë˜ê°€ ì—†ë‹¤ë©´ false
 					player.stop();
-				
 
 			} else if (num == 3) {
-				// ´ÙÀ½°î -> Dalla Dalla, Itzy, 2ºĞ
-				// SOLO ÀÌÈÄ·Î ´ÙÀ½°îÀ» ´©¸£¸é
-				// 'Àç»ıÇÒ°îÀÌ ¾ø½À´Ï´Ù'
+				
+				// ë‹¤ìŒê³¡ -> Dalla Dalla, Itzy, 2ë¶„
+				// SOLO ì´í›„ë¡œ ë‹¤ìŒê³¡ì„ ëˆ„ë¥´ë©´
+				// 'ì¬ìƒí• ê³¡ì´ ì—†ìŠµë‹ˆë‹¤'
 //				System.out.print(musicList.get(1).getMusicName() + " ");
 //				System.out.print(musicList.get(1).getSinger() + " ");
 //				System.out.println(musicList.get(1).getPlayTime() + " ");
@@ -73,16 +71,14 @@ public class MusicMain {
 //					mp3.play(musicList.get(index).getPath());
 //
 //				} else {
-//					System.out.println("Àç»ıÇÒ°îÀÌ ¾ø½À´Ï´Ù");
+//					System.out.println("ì¬ìƒí• ê³¡ì´ ì—†ìŠµë‹ˆë‹¤");
 //					index = 0;
 //				}
+				
 				player.nextPlay();
 				
-				
-				
-
 			} else if (num == 4) {
-				// ´Ü, ±ø ÀÌÀü°îÀ» ´©¸£¸é ÀÌÀü°îÀÌ ¾ø½À´Ï´Ù
+				// ë‹¨, ê¹¡ ì´ì „ê³¡ì„ ëˆ„ë¥´ë©´ ì´ì „ê³¡ì´ ì—†ìŠµë‹ˆë‹¤
 //				if (mp3.isPlaying()) {
 //					mp3.stop();
 //				}
@@ -91,13 +87,13 @@ public class MusicMain {
 //					player.musicList.get(index).show();
 //					mp3.play(musicList.get(index).getPath());
 //				} else {
-//					System.out.println("ÀÌÀü°îÀÌ ¾ø½À´Ï´Ù");
+//					System.out.println("ì´ì „ê³¡ì´ ì—†ìŠµë‹ˆë‹¤");
 //					index = musicList.size() - 1;
 //				}
 				player.previousPlay();
 				
 			} else if (num == 5) {
-				System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+				System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 				break;
 			}
 		}
