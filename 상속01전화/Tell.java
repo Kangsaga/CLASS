@@ -1,16 +1,15 @@
-package »ó¼Ó01;
+package ìƒì†01;
 
 public class Tell {
-	//»óÀ§(ºÎ¸ğ) Å¬·¡½º
+	//ìƒìœ„(ë¶€ëª¨) í´ë˜ìŠ¤
 	
 	public void Call() {
-		System.out.println("ÀüÈ­¸¦ °É´Ù");
+		System.out.println("ì „í™”ë¥¼ ê±¸ë‹¤");
 	}
 	public void CallSend() {
-		System.out.println("ÀüÈ­¸¦ ¹Ş´Ù");
+		System.out.println("ì „í™”ë¥¼ ë°›ë‹¤");
 	}
 	public void ButtonClick() {
-		System.out.println("¹öÆ°À» µ¹·Á¼­ ¼±ÅÃÇÏ´Ù");
+		System.out.println("ë²„íŠ¼ì„ ëŒë ¤ì„œ ì„ íƒí•˜ë‹¤");
 	}
-	
 }
