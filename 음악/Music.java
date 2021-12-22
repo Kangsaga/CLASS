@@ -1,9 +1,9 @@
 
 public class Music {
 	
-	private String musicName; // ³ë·¡ÀÌ¸§
-	private String singer; // °¡¼öÀÌ¸§
-	private int playTime; // Àç»ı½Ã°£
+	private String musicName; // ë…¸ë˜ì´ë¦„
+	private String singer; // ê°€ìˆ˜ì´ë¦„
+	private int playTime; // ì¬ìƒì‹œê°„
 	private String path;
 	
 	public Music(String musicName, String singer, int playTime) {
@@ -12,7 +12,8 @@ public class Music {
 		this.singer = singer;
 		this.playTime = playTime;
 	}
-	// »ı¼ºÀÚ ¿À¹ö·Îµù
+	
+	// ìƒì„±ì ì˜¤ë²„ë¡œë”©
 	public Music(String musicName, String singer, int playTime, String path) {
 		super();
 		this.musicName = musicName;
@@ -20,14 +21,10 @@ public class Music {
 		this.playTime = playTime;
 		this.path = path;
 	}
-
 	
-	
-
 	public String getMusicName() {
 		return musicName;
 	}
-
 	
 	public String getSinger() {
 		return singer;
@@ -40,10 +37,9 @@ public class Music {
 	public String getPath() {
 		return path;
 	}
+	
 	public void show() {
-		System.out.printf("[ ³ë·¡Á¦¸ñ : %s °¡¼ö : %s ÇÃ·¹ÀÌÅ¸ÀÓ : %dºĞ %dÃÊ ] %n",musicName,singer,playTime/60,playTime%60);
+		System.out.printf("[ ë…¸ë˜ì œëª© : %s ê°€ìˆ˜ : %s í”Œë ˆì´íƒ€ì„ : %dë¶„ %dì´ˆ ] %n",musicName,singer,playTime/60,playTime%60);
 	}
-	
-	
 	
 }
