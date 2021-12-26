@@ -1,13 +1,14 @@
 
 public class WheelMouse extends Mouse {
 	public void scllor() {
-		System.out.println("µå¸£¸¤");
+		System.out.println("ë“œë¥´ë¥µ");
 	}
 	
-	// ¿À¹ö¶óÀÌµù -> »ó¼Ó°ü°è¿¡¼­ ÀÚ½ÄÅ¬·¡½º°¡
-	// ºÎ¸ğÅ¬·¡½ºÀÇ ±â´ÉÀ» ÀçÁ¤ÀÇ ÇÒ¶§ »ç¿ëÇÑ´Ù!!
+	// ì˜¤ë²„ë¼ì´ë”© -> ìƒì†ê´€ê³„ì—ì„œ ìì‹í´ë˜ìŠ¤ê°€
+	// ë¶€ëª¨í´ë˜ìŠ¤ì˜ ê¸°ëŠ¥ì„ ì¬ì •ì˜ í• ë•Œ ì‚¬ìš©í•œë‹¤!!
 	@Override
 	public void Click() {
-		System.out.println("Å¬¸¯ Å¬¸¯");
+		System.out.println("í´ë¦­ í´ë¦­");
 	}
+	
 }
