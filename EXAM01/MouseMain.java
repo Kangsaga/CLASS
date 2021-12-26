@@ -9,21 +9,22 @@ public class MouseMain {
 		mouse1.RightClick();
 		
 		WheelMouse mouse2 = new WheelMouse();
-		mouse2.scllor(); //È®Àå
-		mouse2.Click(); //»ó¼Ó + ¿À¹ö¶óÀÌµù
-		mouse2.RightClick(); // »ó¼Ó
+		mouse2.scllor(); //í™•ìž¥
+		mouse2.Click(); //ìƒì† + ì˜¤ë²„ë¼ì´ë”©
+		mouse2.RightClick(); // ìƒì†
 		
-		// ¾÷Ä³½ºÆÃ -> ÇÏÀ§ Å¬·¡½ºÀÇ °´Ã¼°¡
-		// »óÀ§ Å¬·¡½ºÀÇ °´Ã¼ Å¸ÀÔÀ¸·Î Çüº¯È¯!!
+		// ì—…ìºìŠ¤íŒ… -> í•˜ìœ„ í´ëž˜ìŠ¤ì˜ ê°ì²´ê°€
+		// ìƒìœ„ í´ëž˜ìŠ¤ì˜ ê°ì²´ íƒ€ìž…ìœ¼ë¡œ í˜•ë³€í™˜!!
 		Mouse mouse3 = mouse2;
+		
 		mouse3.RightClick();
-		// Mouse·Î Çüº¯È­À» ½ÃÄ×±â ¶§¹®¿¡
-		// WheelMouseÀÇ ±â´ÉÀº »ç¿ëÇÒ¼ö ¾ø´Ù
+		// Mouseë¡œ í˜•ë³€í™”ì„ ì‹œì¼°ê¸° ë•Œë¬¸ì—
+		// WheelMouseì˜ ê¸°ëŠ¥ì€ ì‚¬ìš©í• ìˆ˜ ì—†ë‹¤
 		// mouse3.scllor();
 		
-		// WheelMouse ¿¡¼­ ¿À¹ö¶óÀÌµùÇÑ ¸Þ¼Òµå´Â ¹Ù²îÁö ¾Ê°í ¼öÇàÇÑ´Ù
-		// WheelMouse ¿¡ ÀÖ´Â ±â´É¿Í Mouse¿¡ ±â´É¿¡ ±³ÁýÇÕ
-		// ´Ü,±â´ÉÀº Wheelmouse¿¡ ±â´ÉÀ» »ç¿ëÇÑ´Ù
+		// WheelMouse ì—ì„œ ì˜¤ë²„ë¼ì´ë”©í•œ ë©”ì†Œë“œëŠ” ë°”ë€Œì§€ ì•Šê³  ìˆ˜í–‰í•œë‹¤
+		// WheelMouse ì— ìžˆëŠ” ê¸°ëŠ¥ì™€ Mouseì— ê¸°ëŠ¥ì— êµì§‘í•©
+		// ë‹¨,ê¸°ëŠ¥ì€ Wheelmouseì— ê¸°ëŠ¥ì„ ì‚¬ìš©í•œë‹¤
 		mouse3.Click();
 		
 	}
