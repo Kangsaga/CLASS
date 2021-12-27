@@ -2,11 +2,10 @@ package Exam02;
 
 public class Snack {
 	
-	// °úÀÚµéÀÇ »óÀ§ Å¬·¡½º
+	// ê³¼ìë“¤ì˜ ìƒìœ„ í´ë˜ìŠ¤
 	
 	public void open() {
-		System.out.println("°úÀÚ ºÀÁö¸¦ ¶â´Ù");
+		System.out.println("ê³¼ì ë´‰ì§€ë¥¼ ëœ¯ë‹¤");
 	}
-	
 	
 }
