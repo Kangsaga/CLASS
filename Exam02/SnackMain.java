@@ -5,23 +5,24 @@ public class SnackMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		// ½ÇÁúÀûÀ¸·Î My Å¬·¡½º¸¦ ÅëÇØ¼­
-		// °úÀÚ¸¦ ¸Ô´Â ±â´ÉÀ» ¼öÇà
+		// ì‹¤ì§ˆì ìœ¼ë¡œ My í´ë˜ìŠ¤ë¥¼ í†µí•´ì„œ
+		// ê³¼ìë¥¼ ë¨¹ëŠ” ê¸°ëŠ¥ì„ ìˆ˜í–‰
 		My m1 = new My();
-		²¿±òÄÜ snack1 = new ²¿±òÄÜ();
-		È¨·±º¼ snack2 = new È¨·±º¼();
-		½ãÄ¨ snack3 = new ½ãÄ¨();
+		ê¼¬ê¹”ì½˜ snack1 = new ê¼¬ê¹”ì½˜();
+		í™ˆëŸ°ë³¼ snack2 = new í™ˆëŸ°ë³¼();
+		ì¬ì¹© snack3 = new ì¬ì¹©();
 		
-		// ²¿±òÄÜ ¸Ô±â
-		//m1.²¿±òÄÜOpen(snack1);
-		// È¨·±º¼ ¸Ô±â
-		//m1.È¨·±º¼Open(snack2);
-		// ½ãÄ¨ ¸Ô±â
-		//m1.½ãÄ¨Open(snack3);
+		// ê¼¬ê¹”ì½˜ ë¨¹ê¸°
+		//m1.ê¼¬ê¹”ì½˜Open(snack1);
+		// í™ˆëŸ°ë³¼ ë¨¹ê¸°
+		//m1.í™ˆëŸ°ë³¼Open(snack2);
+		// ì¬ì¹© ë¨¹ê¸°
+		//m1.ì¬ì¹©Open(snack3);
 		
 		m1.SnackOpen(snack1);
 		m1.SnackOpen(snack2);
 		m1.SnackOpen(snack3);
+		
 		
 	}
 
