@@ -2,7 +2,7 @@ package Exam03;
 
 public class Machine {
 	
-	// °¢ ÀÎÇüÀ» »Ì´Â ±â´ÉÀ» ¸¸µé±â!!
+	// ê° ì¸í˜•ì„ ë½‘ëŠ” ê¸°ëŠ¥ì„ ë§Œë“¤ê¸°!!
 //	public void getPika(Pika pika) {
 //		pika.pick();
 //	}
@@ -12,6 +12,7 @@ public class Machine {
 //	public void getKkobok(Kkobok kkobok) {
 //		kkobok.pick();
 //	}
+	
 	public void getDoll(Doll doll) {
 		doll.pick();
 	}
