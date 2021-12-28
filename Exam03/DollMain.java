@@ -10,16 +10,13 @@ public class DollMain {
 		Piri fire = new Piri();
 		Kkobok kkobok = new Kkobok();
 		
-		// ¸Ó½ÅÀ» ÅëÇØ¼­ ÇÇÄ«Ãò ÀÎÇüÀ» »Ì°í ½Í¾î¿ä
+		// ë¨¸ì‹ ì„ í†µí•´ì„œ í”¼ì¹´ì¸„ ì¸í˜•ì„ ë½‘ê³  ì‹¶ì–´ìš”
 //		ma.getPika(pika);
 //		ma.getPiri(fire);
 //		ma.getKkobok(kkobok);
 		ma.getDoll(pika);
 		ma.getDoll(fire);
 		ma.getDoll(kkobok);
-		
-		
-		
 	}
 
 }
