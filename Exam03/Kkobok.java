@@ -1,0 +1,8 @@
+package Exam03;
+
+public class Kkobok extends Doll{
+	
+	public void pick() {
+		System.out.println("≤ø∫œ¿Ã ¿Œ«¸¿ª ªÃ¥Ÿ");
+	}
+}
