@@ -6,27 +6,25 @@ public class AnimalMain {
 		
 		Animal ani = new Animal();
 		
-		System.out.println("¹ßÅé °¹¼ö : " + ani.claw);
-		System.out.println("²¿¸® ±æÀÌ : " + ani.tailSize);
-		System.out.println("¹«´Ì : " + ani.pattern);
-		System.out.println("ÀÌ»¡ °¹¼ö : " + ani.teeth);
+		System.out.println("ë°œí†± ê°¯ìˆ˜ : " + ani.claw);
+		System.out.println("ê¼¬ë¦¬ ê¸¸ì´ : " + ani.tailSize);
+		System.out.println("ë¬´ëŠ¬ : " + ani.pattern);
+		System.out.println("ì´ë¹¨ ê°¯ìˆ˜ : " + ani.teeth);
 		
-		// ¿À¹ö¶óÀÌµùÀ» ÅëÇØ¼­ ¹«´Ì¸¦ ¹Ù²Ş
+		// ì˜¤ë²„ë¼ì´ë”©ì„ í†µí•´ì„œ ë¬´ëŠ¬ë¥¼ ë°”ê¿ˆ
 		Dog dog = new Dog();
-		dog.pattern = "ÁÙ¹«´Ì";
+		dog.pattern = "ì¤„ë¬´ëŠ¬";
 		
-		//¾÷Ä³½ºÆÃÀ» ÇÔ
+		//ì—…ìºìŠ¤íŒ…ì„ í•¨
 		Animal ani2 = dog;
 		System.out.println(ani2.pattern);
 		
-		// ¾÷Ä³½ºÆÃÀ» Çß±â ¶§¹®¿¡ ºÎ¸ğ¿¡ ÀÖ´Â ±â´ÉÀ»
-		// ºÎ¸ğ°¡ ¿À¹ö¶óÀÌµùÀ» ÇØµµ ¹Ù²ï´Ù
-		// °°Àº ÁÖ¼Ò°ªÀ» °¡Áö±â ¶§¹®¿¡
-		ani2.pattern = "º°¸ğ¾ç";
+		// ì—…ìºìŠ¤íŒ…ì„ í–ˆê¸° ë•Œë¬¸ì— ë¶€ëª¨ì— ìˆëŠ” ê¸°ëŠ¥ì„
+		// ë¶€ëª¨ê°€ ì˜¤ë²„ë¼ì´ë”©ì„ í•´ë„ ë°”ë€ë‹¤
+		// ê°™ì€ ì£¼ì†Œê°’ì„ ê°€ì§€ê¸° ë•Œë¬¸ì—
+		ani2.pattern = "ë³„ëª¨ì–‘";
 		System.out.println(dog.pattern);
 		
-		
-
 	}
 
 }
