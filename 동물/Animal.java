@@ -2,15 +2,13 @@ package Exam01;
 
 public class Animal {
 	
-	// ¹ßÅé°¹¼ö
+	// ë°œí†±ê°¯ìˆ˜
 	int claw = 10;
-	// ²¿¸®±æÀÌ
+	// ê¼¬ë¦¬ê¸¸ì´
 	int tailSize = 20;
-	// ¹«´Ì
-	String pattern = "Á¡¹ÚÀÌ";
-	// ÀÌ»¡°¹¼ö
+	// ë¬´ëŠ¬
+	String pattern = "ì ë°•ì´";
+	// ì´ë¹¨ê°¯ìˆ˜
 	int teeth = 24;
-	
-	
 	
 }
