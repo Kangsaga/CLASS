@@ -2,12 +2,8 @@ package Exam01;
 
 public class Dog extends Animal{
 	
-	// ¹ßÅé°¹¼ö
-	// ²¿¸®±æÀÌ
-	// ¹«´Ì
-	// ÀÌ»¡°¹¼ö
-	
-	
-	
-	
+	// ë°œí†±ê°¯ìˆ˜
+	// ê¼¬ë¦¬ê¸¸ì´
+	// ë¬´ëŠ¬
+	// ì´ë¹¨ê°¯ìˆ˜
 }
