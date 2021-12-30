@@ -11,5 +11,4 @@ public abstract class Person {
 	// 생각하다
 	public abstract void think();
 	
-	
 }
