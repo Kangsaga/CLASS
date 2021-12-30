@@ -2,15 +2,14 @@ package Exam02;
 
 public abstract class Person {
 	
-	// »ç¶÷ÀÌ¶ó¸é ¹«Á¶°Ç ÇÒ ¼ö ÀÖ´Â ±â´É
+	// ì‚¬ëŒì´ë¼ë©´ ë¬´ì¡°ê±´ í•  ìˆ˜ ìˆëŠ” ê¸°ëŠ¥
 	
-	// ¼û½¬´Ù
+	// ìˆ¨ì‰¬ë‹¤
 	public abstract void breath();
-	// ¸Ô´Ù
+	// ë¨¹ë‹¤
 	public abstract void eat();
-	// »ı°¢ÇÏ´Ù
+	// ìƒê°í•˜ë‹¤
 	public abstract void think();
-	
 	
 	
 	
