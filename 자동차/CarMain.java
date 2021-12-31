@@ -4,7 +4,6 @@ public class CarMain {
 
 	public static void main(String[] args) {
 		
-		
 		수소자동차 car1 = new 수소자동차();
 		car1.run();
 		
