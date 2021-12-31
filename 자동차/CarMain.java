@@ -5,12 +5,11 @@ public class CarMain {
 	public static void main(String[] args) {
 		
 		
-		¼ö¼ÒÀÚµ¿Â÷ car1 = new ¼ö¼ÒÀÚµ¿Â÷();
+		ìˆ˜ì†Œìë™ì°¨ car1 = new ìˆ˜ì†Œìë™ì°¨();
 		car1.run();
 		
-		¹°ÀÚµ¿Â÷ car2 = new ¹°ÀÚµ¿Â÷();
+		ë¬¼ìë™ì°¨ car2 = new ë¬¼ìë™ì°¨();
 		car2.run();
-		
 		
 		
 	}
