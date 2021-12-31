@@ -10,7 +10,6 @@ public class CarMain {
 		물자동차 car2 = new 물자동차();
 		car2.run();
 		
-		
 	}
 
 }
