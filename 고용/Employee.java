@@ -22,5 +22,4 @@ public abstract class Employee {
 	public  String print() {
 		return empno + " : " + name + " : " + pay;
 	}
-	
 }
