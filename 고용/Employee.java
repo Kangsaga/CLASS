@@ -2,12 +2,12 @@ package Exam04;
 
 public abstract class Employee {
 	
-	// °øÅëµÇ´Â ÇÊµå
-	String empno; // »ç¹ø
-	String name; // ÀÌ¸§
-	int pay; // ¿¬ºÀ, ÀÏ´ç
+	// ê³µí†µë˜ëŠ” í•„ë“œ
+	String empno; // ì‚¬ë²ˆ
+	String name; // ì´ë¦„
+	int pay; // ì—°ë´‰, ì¼ë‹¹
 	
-	// Ãß»óÅ¬·¡½º »ı¼ºÀÚ
+	// ì¶”ìƒí´ë˜ìŠ¤ ìƒì„±ì
 	public Employee(String empno, String name, int pay) {
 		super();
 		this.empno = empno;
@@ -15,13 +15,12 @@ public abstract class Employee {
 		this.pay = pay;
 	}
 
-	// getMoneyPay(), print() Ãß»ó¸Ş¼Òµå·Î ¼±¾ğ
+	// getMoneyPay(), print() ì¶”ìƒë©”ì†Œë“œë¡œ ì„ ì–¸
 	
 	public abstract int getMoneyPay();
 	
 	public  String print() {
 		return empno + " : " + name + " : " + pay;
 	}
-	
 	
 }
