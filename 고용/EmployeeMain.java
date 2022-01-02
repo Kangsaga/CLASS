@@ -4,25 +4,24 @@ public class EmployeeMain {
 
 	public static void main(String[] args) {
 		
-		RegularEmployee regular = new RegularEmployee("201101", "¹Úº´°ü", 4000, 800);
+		RegularEmployee regular = new RegularEmployee("201101", "ë°•ë³‘ê´€", 4000, 800);
 		
 		System.out.println(regular.print());
 		
-		// ¿ù±Ş¿© Ãâ·Â
-		System.out.println(regular.getMoneyPay() + "¸¸¿ø");
-		// °è¾àÁ÷
-		TempEmployee temp = new TempEmployee("201505", "½ÂÈ¯", 3000);
+		// ì›”ê¸‰ì—¬ ì¶œë ¥
+		System.out.println(regular.getMoneyPay() + "ë§Œì›");
+		// ê³„ì•½ì§
+		TempEmployee temp = new TempEmployee("201505", "ìŠ¹í™˜", 3000);
 		
 		
 		System.out.println(temp.print());
-		// ¾Ë¹Ù
-		PartTimeEmployee part = new PartTimeEmployee("201606", "¼ö¹Î", 50000, 12);
+		// ì•Œë°”
+		PartTimeEmployee part = new PartTimeEmployee("201606", "ìˆ˜ë¯¼", 50000, 12);
 		
 		System.out.println(part.print());
-		// ¸Å´ÏÀú
-		Manager manager = new Manager("200001", "µ¿¿ø", 5000, 1000);
+		// ë§¤ë‹ˆì €
+		Manager manager = new Manager("200001", "ë™ì›", 5000, 1000);
 		
 		System.out.println(manager.print());
 	}
-
 }
