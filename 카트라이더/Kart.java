@@ -2,18 +2,17 @@ package Exam02;
 
 public interface Kart {
 	
-	// д╚ф╝юг ╪Ё╟Х╣╣
+	// Л╧╢М┼╦Л²≤ Л└╓ЙЁ└К▐└
 	
-	// ╫цюш ю╖д║ = 0 ;
+	// Л▀°Л·▒ Л°└Л╧≤ = 0 ;
 	int position = 0;
 	
-	// ╬ую╦╥н ╟║╢и ╠Б╢и
-	public abstract void go(int num); // num -> ╬С╦╤╦╦е╜ ╬ую╦╥н ╟╛╢баЖ
-	// ╣з╥н ╟║╢б ╠Б╢и
-	public abstract void back(int num); // num -> ╬С╦╤╦╦е╜ ╣з╥н ╟╛╢баЖ
-	// ╨н╫╨ем ╠Б╢и
-	public abstract void booster(int power); // power -> ╨н╫╨ем╦╕ ╬С╦╤Ё╙ ╫Й╟т гр╟гаЖ
-	
+	// Л∙·Л°╪К║° Й╟─К┼╔ Й╦╟К┼╔
+	public abstract void go(int num); // num -> Л√╪К╖┬К╖▄М│╪ Л∙·Л°╪К║° Й╟■К┼■Л╖─
+	// К▓╓К║° Й╟─К┼■ Й╦╟К┼╔
+	public abstract void back(int num); // num -> Л√╪К╖┬К╖▄М│╪ К▓╓К║° Й╟■К┼■Л╖─
+	// К╤─Л┼╓М└╟ Й╦╟К┼╔
+	public abstract void booster(int power); // power -> К╤─Л┼╓М└╟К╔╪ Л√╪К╖┬К┌≤ Л▌└Й╡▄ М∙═Й╠╢Л╖─
 	
 	
 	
