@@ -1,25 +1,24 @@
 
 public class Lollipop implements Phone{
 
-	// ÀÎÅÍÆäÀÌ½º¸¦ »ó¼Ó ¹ŞÀ»¶© implements ¶ó´Â Å°¿öµå¸¦ »ç¿ëÇÑ´Ù!
+	// ì¸í„°í˜ì´ìŠ¤ë¥¼ ìƒì† ë°›ì„ë• implements ë¼ëŠ” í‚¤ì›Œë“œë¥¼ ì‚¬ìš©í•œë‹¤!
 	
 	@Override
 	public void Carmera() {
-		System.out.println("Ä«¸Ş¶ó Âï´Ù");
+		System.out.println("ì¹´ë©”ë¼ ì°ë‹¤");
 	}
 
 	@Override
 	public void Call() {
-		System.out.println("ÀüÈ­ÇÏ´Ù");
+		System.out.println("ì „í™”í•˜ë‹¤");
 	}
 
 	@Override
 	public void Message() {
-		System.out.println("¹®ÀÚ¸¦ º¸³»´Ù");
+		System.out.println("ë¬¸ìë¥¼ ë³´ë‚´ë‹¤");
 	}
 
 
-	
 	
 	
 	
