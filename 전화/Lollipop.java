@@ -22,5 +22,4 @@ public class Lollipop implements Phone{
 	
 	
 	
-	
 }
