@@ -2,7 +2,7 @@ package exam01;
 
 public abstract class PbkJjajang {
 	
-	//°­Á¦¼ºÀ» ºÎ¿©ÇÑ´Ù
+	//ê°•ì œì„±ì„ ë¶€ì—¬í•œë‹¤
 	public abstract void makeJjajang();
 	
 	
