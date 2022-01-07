@@ -8,25 +8,25 @@ import java.util.ArrayList;
 public class MemberDAO {
 
 	// DAO -> Database Access Object
-	// µ¥ÀÌÅÍ º£ÀÌ½º¿¡ Á¢±ÙÇÏ±â À§ÇÑ °´Ã¼¸¦ ¸¸µé ¼ö ÀÖ´Â Å¬·¡½º
+	// ë°ì´í„° ë² ì´ìŠ¤ì— ì ‘ê·¼í•˜ê¸° ìœ„í•œ ê°ì²´ë¥¼ ë§Œë“¤ ìˆ˜ ìˆëŠ” í´ë˜ìŠ¤
 
 //	Scanner sc = new Scanner(System.in);
 
-	// ·¹ÆÛ·±½º Å¸ÀÔÀº ÇÊµå¿¡ ÀÖÀ¸¸é ÃÊ±â°ª(null)ÀÌ µé¾î°£´Ù
-	// ÀÚ·áÇü¿¡¼­ ³í¸®ÇüÀ» Á¦¿ÜÇÑ º¯¼ö Å¸ÀÔÀº ÃÊ±â°ª(0)ÀÌ µé¾î°£´Ù
+	// ë ˆí¼ëŸ°ìŠ¤ íƒ€ì…ì€ í•„ë“œì— ìˆìœ¼ë©´ ì´ˆê¸°ê°’(null)ì´ ë“¤ì–´ê°„ë‹¤
+	// ìë£Œí˜•ì—ì„œ ë…¼ë¦¬í˜•ì„ ì œì™¸í•œ ë³€ìˆ˜ íƒ€ì…ì€ ì´ˆê¸°ê°’(0)ì´ ë“¤ì–´ê°„ë‹¤
 	private Connection conn;
 	private PreparedStatement psmt;
 	private ResultSet rs;
 
-	// µå¶óÀÌ¹ö ·Îµù°ú Ä¿³Ø¼Ç °´Ã¼¸¦ °¡Á®¿À´Â ¸Ş¼Òµå
-	// publicÀº °°Àº ÇÁ·ÎÁ§Æ® ¾È¿¡¼­¸¸ °¡Á®¿À´Â°ÇÀÌ °¡´ÉÇÏ´Ù
+	// ë“œë¼ì´ë²„ ë¡œë”©ê³¼ ì»¤ë„¥ì…˜ ê°ì²´ë¥¼ ê°€ì ¸ì˜¤ëŠ” ë©”ì†Œë“œ
+	// publicì€ ê°™ì€ í”„ë¡œì íŠ¸ ì•ˆì—ì„œë§Œ ê°€ì ¸ì˜¤ëŠ”ê±´ì´ ê°€ëŠ¥í•˜ë‹¤
 	private void getConnection() {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 
-			String db_url = "jdbc:oracle:thin:@localhost:1521:xe";
-			String db_id = "hr";
-			String db_pw = "hr";
+			String db_url = "";
+			String db_id = "";
+			String db_pw = "";
 
 			conn = DriverManager.getConnection(db_url, db_id, db_pw);
 
@@ -38,7 +38,7 @@ public class MemberDAO {
 
 	}
 
-	// DataBase¿Í ¿¬°áÀ» ²÷¾îÁÖ´Â ¸Ş¼Òµå
+	// DataBaseì™€ ì—°ê²°ì„ ëŠì–´ì£¼ëŠ” ë©”ì†Œë“œ
 	private void close() {
 		try {
 			if (rs != null) {
@@ -56,7 +56,7 @@ public class MemberDAO {
 		}
 	}
 
-	// ·Î±×ÀÎ ±â´É
+	// ë¡œê·¸ì¸ ê¸°ëŠ¥
 	public String login(String id, String pw) {
 
 		getConnection();
