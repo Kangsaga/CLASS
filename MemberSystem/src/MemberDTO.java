@@ -1,8 +1,8 @@
 
 public class MemberDTO {
 	
-	// µ¥ÀÌÅÍ º£ÀÌ½º¸¦ Ç¥ÇöÇÏ±â À§ÇÑ »ç¿ëÀÚ ÀÓÀÇÀÇ VOÅ¬·¡½ºÀÌ´Ù
-	// VO Å¬·¡½º -> Value Object (»ç¿ëÀÚ ÀÓÀÇÀÇ Å¬·¡½º)
+	// ë°ì´í„° ë² ì´ìŠ¤ë¥¼ í‘œí˜„í•˜ê¸° ìœ„í•œ ì‚¬ìš©ì ì„ì˜ì˜ VOí´ë˜ìŠ¤ì´ë‹¤
+	// VO í´ë˜ìŠ¤ -> Value Object (ì‚¬ìš©ì ì„ì˜ì˜ í´ë˜ìŠ¤)
 	
 	private String id;
 	private String pw;
@@ -38,7 +38,6 @@ public class MemberDTO {
 	public String toString() {
 		return "MemberDTO [id=" + id + ", pw=" + pw + ", nick=" + nick + "]";
 	}
-	
 	
 	
 	
