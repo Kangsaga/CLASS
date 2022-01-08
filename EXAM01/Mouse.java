@@ -1,10 +1,10 @@
 
 public class Mouse {
 	public void Click() {
-		System.out.println("Å¬¸¯");
+		System.out.println("클릭");
 	}
 	public void RightClick() {
-		System.out.println("¿ìÅ¬¸¯");
+		System.out.println("우클릭");
 	}
 	
 }
