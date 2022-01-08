@@ -3,6 +3,6 @@ package Exam03;
 public class Piri extends Doll{
 	
 	public void pick() {
-		System.out.println("ÆÄÀÌ¸® ÀÎÇüÀ» »Ì´Ù");
+		System.out.println("íŒŒì´ë¦¬ ì¸í˜•ì„ ë½‘ë‹¤");
 	}
 }
