@@ -3,6 +3,6 @@ package Exam03;
 public class Pika extends Doll{
 	
 	public void pick() {
-		System.out.println("ÇÇÄ«Ãò ÀÎÇüÀ» »Ì´Ù");
+		System.out.println("í”¼ì¹´ì¸„ ì¸í˜•ì„ ë½‘ë‹¤");
 	}
 }
