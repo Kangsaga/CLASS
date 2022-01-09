@@ -8,7 +8,7 @@ public class TempEmployee extends Employee{
 	
 	public TempEmployee(String empno, String name, int pay) {
 		super(empno, name, pay);
-		// »óÀ§ Å¬·¡½º¸¦ °¡¸£Å´!!
+		// ìƒìœ„ í´ë˜ìŠ¤ë¥¼ ê°€ë¥´í‚´!!
 		
 //		this.empno = empno;
 //		this.name = name;
