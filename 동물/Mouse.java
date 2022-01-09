@@ -1,9 +1,9 @@
 
 public class Mouse {
 	public void Click() {
-		System.out.println("Å¬¸¯");
+		System.out.println("í´ë¦­");
 	}
 	public void RightClick() {
-		System.out.println("¿ìÅ¬¸¯");
+		System.out.println("ìš°í´ë¦­");
 	}
 }
